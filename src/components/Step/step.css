@@ -1,0 +1,23 @@
+.step {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(10,10,10);
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    color:gray;
+    /* box-shadow: 0 0 0px 2px rgb(255,255,255,.2); */
+    border: 2px solid rgb(255,255,255,0.3);
+    font-size: 1.2rem;
+  }
+  
+  .step:nth-child(4n + 2){
+    background-color: rgb(40,40,40);
+  }
+  
+  .step:hover{
+    box-shadow: 0 0 0px 2px rgb(255,255,255,.4);
+  }

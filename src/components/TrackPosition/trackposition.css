@@ -1,0 +1,17 @@
+.track-position {
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 124px;
+    margin: 10px 0 0 0;
+  }
+  
+  .track-position > div {
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    transition: all .05s ease-out;
+  }

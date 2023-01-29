@@ -1,0 +1,64 @@
+.key-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 100px;
+    width: fit-content;
+    translate: -50%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.key-pad-container {
+    height: 60px;
+    width: 80%;
+}
+
+.key-pad {
+    position: relative;
+    height: 100%;
+    aspect-ratio: 1;
+    margin-inline: 1rem;
+    background-color: rgb(10,10,30);
+    background-color: rgb(50,52,64);
+    border: 2px solid rgb(80,80,100);
+    border-radius: 6px;
+    font-size: 1.5rem;
+    color:var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition: .1s all cubic-bezier(1,.9,.3,3);
+}
+
+.key-pad:nth-child(2){
+    margin-right: 100px;
+}
+
+.active-keys {
+    color:white;
+    display: flex;
+}
+
+@media(max-width: 600px){
+
+    .key-pad-container{
+        height: 50px;
+    }
+
+    .key-pad {
+        margin-inline: 5px;
+    }
+
+    .key-pad:nth-child(2){
+        margin-right: 30px;
+    }
+}

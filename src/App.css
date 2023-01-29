@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+}
+
+:root{
+  --text-color: rgb(210,215,235);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: black;
+  background-color: rgb(20,20,25);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.flex { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.title > h1 {
+  padding-top: 60px;
+}
+
+.title > h2 {
+  font-size: 1.2rem;
+}
+
+.title > h2, .title > h1 {
+  color: var(--text-color)
+}
+
+.sequencer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  padding: 10px;
+  background-color: rgb(80,80,100);
+  background-color: rgb(50,52,64);
+  width: fit-content;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 2px solid rgb(80,80,100);
+}
+
+input[type=number]{
+  background-color: black;
+  color:rgb(100,255,180);
+  height: 30px;
+  width: 60px;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  height: 30px;
+  opacity: 1;
+}
+
+.play-button {
+  height: 30px;
+  width: 100px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgb(120,130,140);
+  background-color: rgb(20,20,25);
+  border: 2px outset gray;
+  color: var(--text-color);
+}
+
+.sorry-message {
+  color:white;
+  margin-top: 50px;
+  padding-inline: 40px;
+}
